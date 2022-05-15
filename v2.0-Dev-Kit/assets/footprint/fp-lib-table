@@ -1,4 +1,0 @@
-
-(fp_lib_table
-  (lib (name "Nugget-PCB-Art")(type KiCad)(uri "$(KIPRJMOD)/Nugget-PCB-Art.pretty")(options "")(descr ""))
-)

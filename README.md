@@ -1,5 +1,5 @@
-# WiFi Nugget Developer Kit v2.0
-This repository contains KiCAD design files for the WiFi Nugget Developer Kit PCB.  The current version of this release is `2.0`.
+# WiFi Nugget Developer Kit v2.1
+This repository contains KiCAD design files for the WiFi Nugget Developer Kit PCB.  The current version of this release is `2.1`.
 This kit is designed to teach beginners basic hardware assembly skills, and features both through-hole and surface mount components.
 
 ### Features
