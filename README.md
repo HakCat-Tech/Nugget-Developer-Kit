@@ -3,12 +3,12 @@ This repository contains KiCAD design files for the WiFi Nugget Developer Kit PC
 This kit is designed to teach beginners basic hardware assembly skills, and features both through-hole and surface mount components.
 
 ### Features
-This kit is designed to work with the [Wemos "mini" form factor](), and accomodates breakouts for the ESP8266, ESP32-S2, and some other Espressif based board designs.
+This kit is designed to work with the [Wemos "mini" form factor](https://www.wemos.cc/en/latest/), and accomodates breakouts for the ESP8266, ESP32-S2, and some other Espressif based board designs.
 The developer kit includes:
 
 - **Buttons** (D-Pad style, 4 Buttons)
 - **RGB LED** (WS2812B NeoPixel)
-- **WiFi Microcontroller** ([D1]()/[S2]()/[C3]() Mini)
+- **WiFi Microcontroller** ([D1](https://www.wemos.cc/en/latest/d1/index.html)/[S2](https://www.wemos.cc/en/latest/s2/index.html)/[C3](https://www.wemos.cc/en/latest/c3/index.html) Mini)
 - **Screen** (SH1106 1.3" OLED)
 - **Expansion Headers** 
 
