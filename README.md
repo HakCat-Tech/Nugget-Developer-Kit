@@ -1,8 +1,16 @@
 # WiFi Nugget Developer Kit v2.1
 This repository contains KiCAD design files for the WiFi Nugget Developer Kit PCB.  The current version of this release is `2.1`.
 This kit is designed to teach beginners basic hardware assembly skills, and features both through-hole and surface mount components.
+<p align="center">
+  <br>
+  <img src="img/DevKit-Purple.png" width="700px">
+  <br>
+  <b>ESP32-S2 DevKit Components</b>
+  <br>
+  <br>
+</p>
 
-### Features
+## Features
 This kit is designed to work with the [Wemos "mini" form factor](https://www.wemos.cc/en/latest/), and accomodates breakouts for the ESP8266, ESP32-S2, and some other Espressif based board designs.
 The developer kit includes:
 
@@ -16,6 +24,6 @@ The developer kit includes:
 
 \* *We ditched the screw assembly on newer Nuggets, which use a snap-fit case.  You can find links to our case designs below.*
 
-### Resources
+## Resources
 - [Assembly Guide]()
 - [3D printed cases](https://github.com/HakCat-Tech/WiFi-Nugget-Cases)
