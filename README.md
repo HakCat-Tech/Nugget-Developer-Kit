@@ -11,6 +11,10 @@ The developer kit includes:
 - **WiFi Microcontroller** ([D1](https://www.wemos.cc/en/latest/d1/index.html)/[S2](https://www.wemos.cc/en/latest/s2/index.html)/[C3](https://www.wemos.cc/en/latest/c3/index.html) Mini)
 - **Screen** (SH1106 1.3" OLED)
 - **Expansion Headers** 
+- **Screw Assembly*** (M2.5 Screws / Threaded Inserts)
+- **3D Printed Case***
+
+\* *We ditched the screw assembly on newer Nuggets, which use a snap-fit case.  You can find links to our case designs below.*
 
 ### Resources
 - [Assembly Guide]()
