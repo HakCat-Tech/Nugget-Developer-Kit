@@ -1,0 +1,475 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0102
+U 1 1 61146F57
+P 8000 4700
+F 0 "#PWR0102" H 8000 4450 50  0001 C CNN
+F 1 "GND" H 8005 4527 50  0000 C CNN
+F 2 "" H 8000 4700 50  0001 C CNN
+F 3 "" H 8000 4700 50  0001 C CNN
+	1    8000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:WeMos_D1_mini U1
+U 1 1 6107D786
+P 3900 3700
+F 0 "U1" H 3900 2811 50  0001 C CNN
+F 1 "WeMos D1 Mini" H 4350 2800 50  0000 C CNN
+F 2 "wemos-d1-mini:wemos-d1-mini-with-pin-header-and-connector" H 3900 2550 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 2050 2550 50  0001 C CNN
+	1    3900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 61192F70
+P 9750 2700
+F 0 "#PWR0103" H 9750 2450 50  0001 C CNN
+F 1 "GND" H 9755 2527 50  0000 C CNN
+F 2 "" H 9750 2700 50  0001 C CNN
+F 3 "" H 9750 2700 50  0001 C CNN
+	1    9750 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J2
+U 1 1 6281B470
+P 6350 2050
+F 0 "J2" H 6150 2350 50  0000 L CNN
+F 1 "Qwiic Connector" H 5900 1700 50  0000 L CNN
+F 2 "" H 6350 2050 50  0001 C CNN
+F 3 "~" H 6350 2050 50  0001 C CNN
+	1    6350 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 6281B8A7
+P 6050 2050
+F 0 "#PWR0101" H 6050 1900 50  0001 C CNN
+F 1 "+3V3" V 6050 2200 50  0000 L CNN
+F 2 "" H 6050 2050 50  0001 C CNN
+F 3 "" H 6050 2050 50  0001 C CNN
+	1    6050 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 2050 6150 2050
+$Comp
+L power:GND #PWR0105
+U 1 1 6281CA2C
+P 6050 1950
+F 0 "#PWR0105" H 6050 1700 50  0001 C CNN
+F 1 "GND" V 6055 1822 50  0000 R CNN
+F 2 "" H 6050 1950 50  0001 C CNN
+F 3 "" H 6050 1950 50  0001 C CNN
+	1    6050 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 1950 6150 1950
+Text GLabel 6050 2150 0    50   Input ~ 0
+SDA
+Text GLabel 6050 2250 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	6050 2250 6150 2250
+Wire Wire Line
+	6150 2150 6050 2150
+$Comp
+L Display_Graphic:SH1106-I2C U2
+U 1 1 62822395
+P 7600 2100
+F 0 "U2" V 7200 2050 50  0000 C CNN
+F 1 "SH1106 OLED" V 8050 2050 50  0000 C CNN
+F 2 "" H 7600 2100 50  0001 C CNN
+F 3 "" H 7600 2100 50  0001 C CNN
+	1    7600 2100
+	0    1    1    0   
+$EndComp
+Text GLabel 8000 2250 2    50   Input ~ 0
+SDA
+Text GLabel 8000 2150 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	8000 2250 7850 2250
+Wire Wire Line
+	7850 2150 8000 2150
+$Comp
+L power:GND #PWR0106
+U 1 1 62823730
+P 8350 2100
+F 0 "#PWR0106" H 8350 1850 50  0001 C CNN
+F 1 "GND" H 8355 1927 50  0000 C CNN
+F 2 "" H 8350 2100 50  0001 C CNN
+F 3 "" H 8350 2100 50  0001 C CNN
+	1    8350 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2100 8350 2050
+Wire Wire Line
+	8350 2050 7850 2050
+$Comp
+L power:+3V3 #PWR0107
+U 1 1 62823FCE
+P 8350 1850
+F 0 "#PWR0107" H 8350 1700 50  0001 C CNN
+F 1 "+3V3" H 8365 2023 50  0000 C CNN
+F 2 "" H 8350 1850 50  0001 C CNN
+F 3 "" H 8350 1850 50  0001 C CNN
+	1    8350 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 1850 8350 1950
+Wire Wire Line
+	8350 1950 7850 1950
+$Comp
+L LED:WS2812B D1
+U 1 1 6108AA06
+P 9750 2200
+F 0 "D1" H 10094 2246 50  0001 L CNN
+F 1 "WS2812B" H 9850 1900 50  0000 L TNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm_idiot_proof" H 9800 1900 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9850 1825 50  0001 L TNN
+	1    9750 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2700 9750 2500
+Text GLabel 9350 2100 1    50   Input ~ 0
+NeoPixel
+Wire Wire Line
+	9350 2100 9350 2200
+Wire Wire Line
+	9350 2200 9450 2200
+Text GLabel 10150 2100 1    50   Input ~ 0
+NeoPixel_Out
+Wire Wire Line
+	10150 2100 10150 2200
+Wire Wire Line
+	10150 2200 10050 2200
+Text GLabel 4400 3900 2    50   Input ~ 0
+UP_BTN
+Text GLabel 4400 3600 2    50   Input ~ 0
+DN_BTN
+Wire Wire Line
+	4400 3600 4300 3600
+Wire Wire Line
+	4400 3900 4300 3900
+Text GLabel 4400 4000 2    50   Input ~ 0
+LT_BTN
+Wire Wire Line
+	4400 4000 4300 4000
+Text GLabel 4400 3800 2    50   Input ~ 0
+RT_BTN
+Wire Wire Line
+	4400 3800 4300 3800
+Wire Wire Line
+	8000 4450 8000 4700
+Connection ~ 8000 4450
+$Comp
+L Switch:SW_Push SW4
+U 1 1 61080994
+P 7800 4450
+F 0 "SW4" H 7800 4735 50  0001 C CNN
+F 1 "Right" H 7800 4644 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_FSMSM" H 7800 4650 50  0001 C CNN
+F 3 "~" H 7800 4650 50  0001 C CNN
+	1    7800 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4000 8000 4450
+Connection ~ 8000 4000
+$Comp
+L Switch:SW_Push SW3
+U 1 1 610800B0
+P 7800 4000
+F 0 "SW3" H 7800 4285 50  0001 C CNN
+F 1 "Left" H 7800 4194 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_FSMSM" H 7800 4200 50  0001 C CNN
+F 3 "~" H 7800 4200 50  0001 C CNN
+	1    7800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 6107F0D4
+P 7800 3200
+F 0 "SW1" H 7800 3485 50  0001 C CNN
+F 1 "Up" H 7800 3394 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_FSMSM" H 7800 3400 50  0001 C CNN
+F 3 "~" H 7800 3400 50  0001 C CNN
+	1    7800 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3600 8000 4000
+Wire Wire Line
+	8000 3200 8000 3600
+Connection ~ 8000 3600
+$Comp
+L Switch:SW_Push SW2
+U 1 1 6107FC58
+P 7800 3600
+F 0 "SW2" H 7800 3885 50  0001 C CNN
+F 1 "Down" H 7800 3794 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_FSMSM" H 7800 3800 50  0001 C CNN
+F 3 "~" H 7800 3800 50  0001 C CNN
+	1    7800 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 7400 3200 0    50   Input ~ 0
+UP_BTN
+Text GLabel 7400 3600 0    50   Input ~ 0
+DN_BTN
+Text GLabel 7400 4000 0    50   Input ~ 0
+LT_BTN
+Text GLabel 7400 4450 0    50   Input ~ 0
+RT_BTN
+Wire Wire Line
+	7400 4450 7600 4450
+Wire Wire Line
+	7600 4000 7400 4000
+Wire Wire Line
+	7400 3600 7600 3600
+Wire Wire Line
+	7600 3200 7400 3200
+Text GLabel 4400 4100 2    50   Input ~ 0
+NEOPIXEL
+Wire Wire Line
+	4400 4100 4300 4100
+$Comp
+L Connector:Conn_01x08_Female J1
+U 1 1 6284CDA0
+P 6350 3350
+F 0 "J1" H 6200 2850 50  0000 L CNN
+F 1 "Expansion Headers" H 5900 2750 50  0000 L CNN
+F 2 "" H 6350 3350 50  0001 C CNN
+F 3 "~" H 6350 3350 50  0001 C CNN
+	1    6350 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 6000 3150 0    50   Input ~ 0
+NeoPixel
+Wire Wire Line
+	6000 3150 6150 3150
+Text GLabel 6000 3350 0    50   Input ~ 0
+SDA
+Text GLabel 6000 3450 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	6000 3450 6150 3450
+Wire Wire Line
+	6150 3350 6000 3350
+Text GLabel 6000 3550 0    50   Input ~ 0
+A0
+Wire Wire Line
+	6000 3550 6150 3550
+Text GLabel 4400 3500 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	4400 3500 4300 3500
+Text GLabel 4400 3400 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	4400 3400 4300 3400
+Text GLabel 4400 3200 2    50   Input ~ 0
+A0
+$Comp
+L power:+5V #PWR0104
+U 1 1 61196773
+P 3800 2650
+F 0 "#PWR0104" H 3800 2500 50  0001 C CNN
+F 1 "+5V" H 3815 2823 50  0000 C CNN
+F 2 "" H 3800 2650 50  0001 C CNN
+F 3 "" H 3800 2650 50  0001 C CNN
+	1    3800 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3050 6150 3050
+$Comp
+L power:GND #PWR0108
+U 1 1 62857C7E
+P 5600 3350
+F 0 "#PWR0108" H 5600 3100 50  0001 C CNN
+F 1 "GND" H 5605 3177 50  0000 C CNN
+F 2 "" H 5600 3350 50  0001 C CNN
+F 3 "" H 5600 3350 50  0001 C CNN
+	1    5600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3350 5600 3250
+Wire Wire Line
+	5600 3250 6150 3250
+$Comp
+L power:+3V3 #PWR0109
+U 1 1 6285CF47
+P 4000 2650
+F 0 "#PWR0109" H 4000 2500 50  0001 C CNN
+F 1 "+3V3" H 4015 2823 50  0000 C CNN
+F 2 "" H 4000 2650 50  0001 C CNN
+F 3 "" H 4000 2650 50  0001 C CNN
+	1    4000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0110
+U 1 1 62860A72
+P 6000 2950
+F 0 "#PWR0110" H 6000 2800 50  0001 C CNN
+F 1 "+5V" H 6015 3123 50  0000 C CNN
+F 2 "" H 6000 2950 50  0001 C CNN
+F 3 "" H 6000 2950 50  0001 C CNN
+	1    6000 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2950 6000 3050
+$Comp
+L power:+5V #PWR0111
+U 1 1 62862AE4
+P 9750 1650
+F 0 "#PWR0111" H 9750 1500 50  0001 C CNN
+F 1 "+5V" H 9765 1823 50  0000 C CNN
+F 2 "" H 9750 1650 50  0001 C CNN
+F 3 "" H 9750 1650 50  0001 C CNN
+	1    9750 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 1650 9750 1900
+Wire Wire Line
+	4400 3200 4300 3200
+$Comp
+L Connector:Conn_01x03_Female J3
+U 1 1 628702F8
+P 6350 1350
+F 0 "J3" H 6378 1376 50  0000 L CNN
+F 1 "NeoPixel Breakout" H 6300 1100 50  0000 L CNN
+F 2 "" H 6350 1350 50  0001 C CNN
+F 3 "~" H 6350 1350 50  0001 C CNN
+	1    6350 1350
+	1    0    0    -1  
+$EndComp
+Text GLabel 6050 1350 0    50   Input ~ 0
+NeoPixel
+Wire Wire Line
+	6050 1350 6150 1350
+$Comp
+L power:GND #PWR?
+U 1 1 62871C21
+P 6050 1500
+F 0 "#PWR?" H 6050 1250 50  0001 C CNN
+F 1 "GND" H 6055 1327 50  0000 C CNN
+F 2 "" H 6050 1500 50  0001 C CNN
+F 3 "" H 6050 1500 50  0001 C CNN
+	1    6050 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1500 6050 1450
+Wire Wire Line
+	6050 1450 6150 1450
+$Comp
+L power:+3V3 #PWR?
+U 1 1 62873B5C
+P 6050 1200
+F 0 "#PWR?" H 6050 1050 50  0001 C CNN
+F 1 "+3V3" H 6065 1373 50  0000 C CNN
+F 2 "" H 6050 1200 50  0001 C CNN
+F 3 "" H 6050 1200 50  0001 C CNN
+	1    6050 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1200 6050 1250
+Wire Wire Line
+	6050 1250 6150 1250
+Text GLabel 4400 3700 2    50   Input ~ 0
+D4
+Wire Wire Line
+	4400 3700 4300 3700
+Text GLabel 6000 3650 0    50   Input ~ 0
+D0
+Text GLabel 6000 3750 0    50   Input ~ 0
+D4
+Wire Wire Line
+	6000 3750 6150 3750
+Wire Wire Line
+	6000 3650 6150 3650
+$Comp
+L power:GND #PWR?
+U 1 1 62885224
+P 3900 4650
+F 0 "#PWR?" H 3900 4400 50  0001 C CNN
+F 1 "GND" H 3905 4477 50  0000 C CNN
+F 2 "" H 3900 4650 50  0001 C CNN
+F 3 "" H 3900 4650 50  0001 C CNN
+	1    3900 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4650 3900 4500
+Wire Wire Line
+	3800 2650 3800 2900
+Wire Wire Line
+	4000 2900 4000 2650
+Text GLabel 4400 3300 2    50   Input ~ 0
+D0
+Wire Wire Line
+	4400 3300 4300 3300
+Text GLabel 3350 3300 0    50   Input ~ 0
+RST
+Wire Wire Line
+	3350 3300 3500 3300
+$Comp
+L Switch:SW_Push SW?
+U 1 1 6284BCD6
+P 3950 1800
+F 0 "SW?" H 3950 2085 50  0001 C CNN
+F 1 "Reset" H 3950 1994 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_FSMSM" H 3950 2000 50  0001 C CNN
+F 3 "~" H 3950 2000 50  0001 C CNN
+	1    3950 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 1800 2    50   Input ~ 0
+RST
+Wire Wire Line
+	4300 1800 4150 1800
+$Comp
+L power:GND #PWR?
+U 1 1 6284EA42
+P 3550 1850
+F 0 "#PWR?" H 3550 1600 50  0001 C CNN
+F 1 "GND" H 3555 1677 50  0000 C CNN
+F 2 "" H 3550 1850 50  0001 C CNN
+F 3 "" H 3550 1850 50  0001 C CNN
+	1    3550 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1850 3550 1800
+Wire Wire Line
+	3550 1800 3750 1800
+$EndSCHEMATC
