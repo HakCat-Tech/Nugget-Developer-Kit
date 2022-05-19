@@ -1,0 +1,11 @@
+### Module positions - created on Thu 19 May 2022 03:29:48 PM PDT ###
+### Printed by Pcbnew version kicad 5.1.5+dfsg1-2build2
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val       Package                                              PosX       PosY       Rot  Side
+D1        WS2812B   LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm_idiot_proof   -11.9380   -20.8280    0.0000  top
+SW1       Up        SW_SPST_FSMSM                                      5.3975   -17.0815    0.0000  top
+SW2       Down      SW_SPST_FSMSM                                      5.3975   -24.7650    0.0000  top
+SW3       Left      SW_SPST_FSMSM                                     -0.8890   -20.9330    0.0000  top
+SW4       Right     SW_SPST_FSMSM                                     11.6205   -20.9330    0.0000  top
+## End
