@@ -1,7 +1,7 @@
 M48
-; DRILL file {KiCad 5.1.5+dfsg1-2build2} date Wed 18 May 2022 11:03:57 PM PDT
+; DRILL file {KiCad 5.1.5+dfsg1-2build2} date Mon 13 Jun 2022 07:55:39 PM PDT
 ; FORMAT={2:4/ absolute / inch / suppress leading zeros}
-; #@! TF.CreationDate,2022-05-18T23:03:57-07:00
+; #@! TF.CreationDate,2022-06-13T19:55:39-07:00
 ; #@! TF.GenerationSoftware,Kicad,Pcbnew,5.1.5+dfsg1-2build2
 ; #@! TF.FileFunction,Plated,1,2,PTH
 FMAT,2
@@ -14,7 +14,7 @@ T4C0.0984
 G90
 G05
 T1
-X-5665Y-7950
+X-5694Y-7950
 X-5050Y-8830
 X-4400Y-8850
 X-2800Y3450
@@ -24,11 +24,11 @@ X-1100Y1800
 X-400Y1800
 X300Y1800
 X2100Y-3200
-X3300Y-5000
+X3275Y-4600
 X3300Y-5700
 X6100Y7500
-X7040Y-1850
 X7050Y-5679
+X7115Y-1850
 T2
 X7600Y7100
 X7600Y6100
